@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #c5c5c5;
+}
+
+h1 {
+    text-align: center;
+}
+h3 {
+    display: block;
+    font-weight: lighter;
+    font-size: small;
+    margin-top: 25px;
+    color: #e20a0a;
+    opacity: 0; /* Initially hide the element */
+    animation: fadeIn 2s forwards; /* Apply the fade-in animation */
+}
+/* Keyframes for the fade-in animation */
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* Fade in to fully visible */
+    }
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+}
+
+input, select, button {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
